@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="XB-Desenvolvidor web">
+	<meta name="Keyword" content="HTML5,CSS3,PHP">
+	<meta name="author" content="Xavier Belchio">
+	<link rel="stylesheet"  href="css/style.css">
+	<!--Icons-->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<title>Minha pagina</title>
+	<link rel="icon" href="img/icon2.png">
+</head>
+<body>
+	<header class="cabecalho pai bg">
+		<h1 class="logo">
+			<a href="index.html">XB-Desenvolvidor web</a>
+		</h1>
+		<button class="btn-menu">
+			<i class="fa fa-bars fa fa-lg"></i>
+		</button>
+		<nav class="menu">
+			<button class="btn-close color"><i class="fa fa-close fa fa-lg"></i></button>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Portifolio</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="redes pai">
+		<div class="socias">
+			<a class="color" href="#"><i class="fa fa-facebook fa fa-lg " ></i></a>
+			<a class="color" href="#"><i class="fa fa-google fa fa-lg "></i></a>
+			<a class="color" href="#"><i class="fa fa-twitter fa fa-lg "></i></a>
+			<a class="color" href="#"><i class="fa fa-instagram fa fa-lg"></i></a>
+		</div>
+	</div>
+	<section class="banner pai">
+		<div class="img">
+			<img src="img/foto.jpg" alt="XB-Desenvolvidor" title="XB">
+		</div>
+		<div class="conteudo bg">
+			<h1>Hi'am Xavier Belchior</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+
+			<div class="btn">
+			<button class="btn-login color">Login</button>
+			<button class="btn-cadastro">Cadastro</button>
+			</div>
+
+		</div>
+	</section>
+	<main class="about pai">
+		<h2 class="color">About</h2>
+		<article class="about-cont pai">
+			<img src="img/foto1.jpg" alt="XB-Desenvolvidor">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris.   </p>
+		</article>
+		<aside class="onde">
+			<h3>Localiza-me!</h3>
+			<p>Bl. são francisco - centro comercial - 228</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26983.667986484543!2d13.56155861212601!3d-12.385851047504216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1bae29f069e83b71%3A0x70ee0256925f45de!2sLobito!5e0!3m2!1spt-PT!2sao!4v1677526570297!5m2!1spt-PT!2sao"></iframe>
+
+		</aside>
+	</main>
+	<section class="contact pai">
+		<h2>Contact</h2>
+		<article class="rede-socias">
+			<h3 class="color">Redes Socias</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+			<p class="icons">
+				<i class="fa fa-facebook fa fa-lg"></i>
+				<i class="fa fa-google fa fa-lg"></i>
+				<i class="fa fa-twitter fa fa-lg"></i>
+			</p>
+			<h3 class="color">Endereço</h3>
+			<p>
+				Rua 28-comercial, 147<br>
+				Centro comercial
+			</p>
+			<h3 class="color">Contato</h3>
+				<p>
+					(+244) 958764507 <br>
+					(+244) 998726561 <br>
+					(+244) 921565755
+				</p>
+		</article>
+		<article class="cadastro bg">
+			<div class="form bg">
+				<h3>Fale comigo</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. </p>
+				<form action="cadastro.php" method="POST">
+					<div class="box-form">
+					<i class="fa fa-user fa fa-lg"></i>
+					<input type="text" name="name" placeholder="Insira seu nome">
+					</div>
+					<div class="box-form">
+						<i class="fa fa-envelope fa fa-lg"></i>
+					<input type="email" name="email" placeholder="Digite o seu email" required>
+					</div>
+					<div class="box-form">
+						<i class="fa fa-font fa fa-lg"></i>
+					<input type="text" name="assunto" placeholder="Assunto">
+					</div>
+					<div class="box-comment">
+					<i class="fa fa-comment fa fa-lg"></i>
+					<textarea id="mesage" placeholder="Mensagem"></textarea>
+					</div>	
+					<button class="btn-cadastro">Enviar <i class="fa fa-send "></i></button>				
+				</form>
+			</div>
+		</article>
+	</section>
+
+	<section class="newsletter pai">
+		<h3 class="color">Inscreva-se agora!</h3>
+		<h4 class="color">Receba novidades promoção ,dica e muito mas... </h4>
+		<form>
+			<input class="color" type="email" name="email" placeholder="Digite seu email">
+			<button>Cadastrar</button>
+		</form>
+	</section>
+
+
+	<footer class="rodape pai bg">
+		<img src="img/logo.png" alt="XB-Desenvolvidor" >
+		<p>&copy;XB-Desenvolvidor web 2023. Todos os direitos reservados.</p>
+	</footer>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+	$(".btn-menu").click(function() {
+		// Quando clickar no botão-menu, mostre o menu
+		$(".menu").show()
+	})
+	$(".btn-close").click(function(){
+		// Quando clickar no botão-close, não mostre menu
+		$(".menu").hide()
+	})
+</script>
+</body>
+</html>

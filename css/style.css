@@ -1,0 +1,695 @@
+
+/*RESET*/
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-size: 100%;
+	font-weight: normal;
+	font-family:  tahoma, sans-serif;
+	box-sizing: border-box;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+/*PADRÃO*/
+.pai{
+	width: 100%;
+	float: left;
+	padding: 20px 10px;
+}
+/*BACKGROUND*/
+.bg{
+	background: #8cfffb;
+}
+/*Color*/
+.color{
+	color: #fff;
+}
+/*BORDAS DE BAIXO*/
+h2::after{
+	width: 100px;
+	content: '';
+	display: block;
+	border:1px solid #111;
+	margin: 15px auto;
+
+}
+
+/*CABEÇALHO*/
+.cabecalho{
+	top: 0;
+	left: 0;
+}
+.logo a{
+	width: 221px;
+	height: 48px;
+	float: left;
+	background: url(../img/logo.png)center center/150px no-repeat;
+	font-size: 0;
+}
+.btn-menu{
+	width: 52px;
+	height: 52px ;
+	float: right;
+	background: transparent;
+	cursor: pointer;
+}
+/*MENU*/
+.menu{
+	width:100%;
+	inset: 0 0 0 0;
+	padding: 20px 10px;
+	height: auto;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(20px);
+
+
+}
+.btn-close{
+	width: 52px ;
+	height: 52px;
+	float: right;
+	background: transparent;
+	cursor: pointer;
+
+	
+}
+.menu ul{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.menu ul li{
+	padding: 15px;
+}
+.menu li a{
+	position: relative;
+	font-size: 2rem;
+	color: #c3c3c3;
+	font-weight: 600;
+}
+/*INSERINDO BORDAS DE BAIXO NAS LISTAS DO MENU COM CSS*/
+.menu li a:after{
+	position: absolute;
+	width: 100%;
+	content: '';
+	height: 3px;
+	left: 0;
+	border-radius: 15px;
+	bottom: -6px;
+	background: #8cfffb;
+	/*transform-origin:right;*/
+	transform: scaleX(0);
+	transition: transform .5s ease;
+	transition: .5s ease;
+}
+.menu li a:hover::after{
+	/*transform-origin:left;*/
+	transform: scaleX(1);
+	transition: transform .7s;
+	
+}
+/*FINALIZAR*/
+.menu li a:hover{
+	color: #fff;
+	transition: .5s;
+}
+/*REDES SOCIAS*/
+.redes{
+	background: #111;
+	text-align: center;
+	
+}
+.redes .socias{
+	width: 100%;
+	float: left;
+	margin: 2% 0 0 0;
+
+
+}
+.socias a{
+	padding: 15px;
+	font-size: 1.2em;
+	transition: .5s;
+}
+.socias a:hover{
+	transition: .5s;
+}
+/*INSERINDO CORES NOS MEUS INCOS COM PSEUDOS*/
+.socias a:hover:nth-child(1){
+	color: #3B5998;
+}
+.socias a:hover:nth-child(2){
+	color: #D73D32;
+}
+.socias a:hover:nth-child(3){
+	color: #54A4D6;
+}
+.socias a:hover:nth-child(4){
+	color: #e53878;
+}
+
+
+/*BANNER*/
+.banner{
+	background: #111;
+}
+
+.img img{
+	width: 500px;
+	height: 400px;
+	border-radius: 555px;
+	border: 5px solid yellow;
+}
+.conteudo{
+	border-radius: 5px;
+
+}
+.conteudo h1{
+	font-size: 2em;
+	color: #111;
+	font-weight: 600;
+	text-align: center;
+	margin:2% 0 2% 0;
+}
+.conteudo p{
+	font-size: 1.1em;
+	line-height: 1.3em;
+	text-align: justify;
+	color: #111;
+}
+.btn{
+	width: 100%;
+	float: left;
+	padding: 5px;
+}
+.btn button{
+	width: 49%;
+	height: 50px;
+	float: left;
+	font-size: 1.1em;
+	font-weight: 600;
+	padding: 5px;
+	margin-right: 1%;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+
+
+.btn .btn-login{
+	background: transparent;
+	border: 1px solid #fff;
+	transition: .5s;
+	font-weight: 600;
+
+	
+}
+.btn .btn-cadastro{
+	background: yellow;
+}
+.btn .btn-cadastro:hover{
+	color: #111;
+	background: yellow;
+
+}
+
+.btn-login:hover{
+	background: #fff;
+	color: #111;
+	font-weight: 600;
+	transition: .5s;
+	
+}
+/*ABOUT*/
+.about{
+	background: #c3c3c3;
+}
+.about h2,h2{
+	font-size: 2em;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+}
+.about-cont{
+	width: 100%;
+	float: left;
+	padding: 5px;	
+} 
+.about-cont img{
+	width: 100%;
+	float: left;
+	height: 500px;
+	border-radius: 5px 5px 0 0;
+	margin: 0 0 2% 0;
+}
+.about-cont p{
+	font-size: 1.1em;
+	text-align: justify;
+	color: #111;
+	font-weight: 500;
+}
+.about .onde{
+	width: 100%;
+	float: left;
+	padding: 5px;
+}
+.onde h3{
+	font-size: 1.4em;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 0 2% 0;
+}
+.onde iframe {
+	width: 100%;
+	float: left;
+	height: 500px;
+}
+.onde  p{
+	font-size: 1.2em;
+	color: #111;
+	text-align: center;
+}
+/*CONTACT*/
+
+.contact h2{
+	color: #111;
+}
+.contact h2::after{
+	border: 1px solid #111;
+	
+}
+.contact .rede-socias{
+	width: 100%;
+	height: 600px;
+	float: left;
+	padding: 7% 8% 8% 7% ;
+	background: #111;	
+}
+.rede-socias h3,h3{
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 0 0 4%  0;
+	text-transform: uppercase;
+}
+.rede-socias p{
+	font-size: 1.1em;
+	color: #c3c3c3;
+	text-align: justify;
+	margin-bottom: 2%;
+}
+.rede-socias .icons{
+	width: 100%;
+	float:right;
+}
+.rede-socias .icons i{
+	margin: 2% 2% 2% 0;
+	font-size: 1.4em;
+	text-align: center;
+	width: 52px;
+	height: 52px;
+	float: left;
+	border-radius: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+
+
+}
+.rede-socias i:nth-child(1){
+	background: #3B5998;
+	color: #fff;
+	transition: .5s;
+	;
+}
+.rede-socias i:nth-child(2){
+	background: #D73D32;
+	color: #fff;
+	transition: .5s;
+}
+
+.rede-socias i:nth-child(3){
+	background:#54A4D6;
+	color: #fff;
+	transition: .5s;
+}
+/*CADASTRO*/
+.cadastro{
+	height: 600px;
+	margin-top: 2%;
+
+
+}
+
+.cadastro .form{
+	width: 100%;
+	padding: 7% 8% 8% 7% ;
+}
+
+.form h3 {
+	color: #111;
+}
+
+.form p{
+	font-size: 1.1em;
+	color: #111;
+	text-align: justify;
+	margin-bottom: 2%;
+}
+.form .box-form{
+	position: relative;
+	height: 30px;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #111;
+	margin:5% 0 5% 0;
+}
+.box-form input{
+	background: transparent;
+	width: 100%;
+	float: left;
+	padding: 0 7% 0 0;
+
+
+}
+.box-form i{
+	position: absolute;
+	top: 0;
+	right: 5px;
+
+}
+
+/*MENSAGEM*/
+.form .box-comment{
+	position: relative;
+	width: 100%;
+	float: left;
+	height: 55px;
+	border-bottom: 1px solid #111;
+	margin:5% 0 5% 0;
+}
+.box-comment textarea{
+	width: 100%;
+	float: left;
+	padding: 5px;
+	background: transparent;
+}
+.box-comment i{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+}
+.form .btn-cadastro{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 1.1em;
+	background: transparent;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn-cadastro:hover{
+	background: #111;
+	color: #fff;
+	transition: .5s;
+}
+/*NESLETTER*/
+ .newsletter{
+	background: #111;
+}
+.newsletter h3{
+	font-size: 1.6em;
+	font-weight: 600;
+	text-align: center;
+	margin: 0 0 1% 0;
+}
+.newsletter h4{
+	font-weight: 500;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom:2%;
+}
+.newsletter form input{
+	width: 100%;
+	float: left;
+	padding: 3%;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	border: 1px solid #fff;
+	background: transparent;
+
+}
+.newsletter button{
+	width: 30%;
+	float: left;
+	padding: 3%;
+	border-radius: 5px;
+	color: #111;
+	background: yellow;
+	font-weight: 600;
+	cursor: pointer;
+}
+/*RODAPE*/
+.rodape{
+	text-align: center;
+}
+.rodape img{
+	width: 200px;
+	margin: 0 0 2% 0;
+}
+.rodape p{
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+
+
+
+/*MOBILE FIRST- BREAKPOINTS*/
+/*SMALL DEVICES - SMARTPHONE*/
+@media screen and (min-width:480px){
+
+	.menu{
+		display: none;
+	}
+}
+
+/*SMALL DEVICES- TABLET*/
+@media screen and (min-width:768px){
+	.about-cont{
+		width: 50%;
+		float: left;
+	}
+	.about-cont img{
+	width: 100%;
+	height:250px;
+	margin: 0 0 2% 0;
+	}
+	.about .onde{
+	width: 50%;
+	float: right;
+	padding: 5px;
+	}
+	.onde iframe {
+	width: 100%;
+	float: left;
+	height: 600px;
+	}
+	.banner .img{
+	width: 100%;
+	float: left;
+	padding: 20px;
+	text-align: center;
+	}
+	.btn .btn-cadastro{
+		background: yellow;
+		color: #111;
+	}
+	.contact .rede-socias{
+	width: 49%;
+	padding: 4% 8% 8% 4% ;
+	}
+	.cadastro{
+		width: 49%;
+		float: right;
+		margin-top: 0;
+	}
+	.newsletter form input{
+	width: 80%;
+	padding: 2%;
+	margin-bottom: 0;
+	}
+	.newsletter button{
+	width: 19%;
+	float: right;
+	padding: 2%;
+	
+}
+
+}
+/*SMALL DEVICES- TABLET and DESKTOP*/
+@media screen and (min-width:960px){
+	.img img{
+	height: 450px;
+	border-radius: 50%;
+}
+.conteudo p{
+	text-align: center;
+}
+
+.btn button{
+	width: 30%;
+}
+.conteudo{
+	width:50%;
+	margin: 0 0 0 4.5%;
+}
+.about-cont{
+	width: 49%;
+	padding: 5px;
+}
+.about-cont p{
+	padding: 5px;
+}
+.about-cont img{
+	width: 60%;
+	padding: 0 3% 2% 2%;
+	margin: 0 0 0 0;
+}
+.about .onde{
+	width: 49%;
+	float: right;
+	margin-right:0;
+	}
+.onde iframe {
+	width: 98%;
+	float: left;
+	height: 450px;
+}
+.contact{
+	padding: 2.1%;
+}
+.banner{
+	padding: 10px 20px;
+}
+.banner .img{
+	width: 49%;
+	float: right;
+	padding: 0;
+}
+.banner .conteudo{
+	width: 49%;
+	float: left;
+	height: 100%;
+	margin: 10% 0 0 0;
+	background: transparent;
+	padding: 5px;
+	border: 1px solid #fff;
+	text-align: center;
+}
+.conteudo h1{
+	color:#8cfffb;
+}
+.conteudo p{
+	color: #fff;
+	text-align: center;
+}
+.conteudo .btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn-login:hover{
+	background: #8cfffb;
+}
+.btn .btn-cadastro{
+	background-color:yellow;
+}
+.logo a{
+	background: url(../img/logo.png)center center/221px no-repeat;
+}
+.newsletter h3{
+	font-size: 2em;
+	color: #fff;
+}
+.newsletter h4{
+	font-size: 1.5em;
+}
+
+.newsletter form input{
+	width: 60%;
+	padding: 1.5%;
+	margin: 0 0 0 10%;
+}
+.newsletter button{
+	margin: 0 10% 0 0;
+	padding: 1.5%;
+	background: yellow;
+}
+
+
+}
+/*LARG DEVICES- DESKTOP*/
+@media screen and (min-width:1280px){
+	.btn-menu{
+		display: none;
+
+	}
+	.btn-close{
+		display: none;
+	}
+	.menu{
+	width:auto;
+	float: right;
+	inset: none;
+	height: 48px;
+	padding: none;
+	display: inline-block;
+	position: static!important;
+	background: #8cfffb;
+
+	}
+	.menu{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.menu ul{
+	width: 100%;
+	float: right;
+	text-align: center;
+
+}
+
+.menu ul li{
+	padding:none;
+	float: left;
+}
+.menu li a{
+	position: relative;
+	font-size: 1.1rem;
+	color: #111;
+	font-weight: 500;
+
+}
+/*INSERINDO BORDAS DE BAIXO NAS LISTAS DO MENU COM CSS*/
+.menu li a:after{
+	background: #fff;	
+}
+
+
+}
